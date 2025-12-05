@@ -1,0 +1,174 @@
+/* -------- Global Styles -------- */
+:root {
+  --max-width: 980px;
+  --muted: #555;
+  --primary: #1d4ed8;
+  --bg-light: #f9fafb;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: #fff;
+  color: #111;
+}
+
+h1, h2, h3, h4 {
+  margin-top: 0;
+}
+
+/* -------- Navbar -------- */
+.navbar {
+  width: 100%;
+  background: #1f2937;
+  color: white;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-left a {
+  color: #d1d5db;
+  margin-right: 20px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.nav-left a:hover {
+  color: white;
+}
+
+.brand {
+  color: white !important;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* -------- Container -------- */
+.container {
+  max-width: var(--max-width);
+  margin: 30px auto;
+  padding: 0 16px;
+}
+
+/* -------- Cards -------- */
+.card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  padding: 16px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.card.small {
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.user-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* -------- Text -------- */
+.muted {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.author {
+  font-size: 14px;
+  color: #374151;
+}
+
+/* -------- List Layout -------- */
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* -------- Search + Sort Controls -------- */
+.controls {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.controls input,
+.controls select,
+input.controls {
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 14px;
+  outline: none;
+}
+
+.controls input:focus,
+.controls select:focus {
+  border-color: var(--primary);
+}
+
+/* -------- Links -------- */
+.link {
+  font-size: 14px;
+  text-decoration: none;
+  color: #2563eb;
+  font-weight: 500;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* -------- Back Button -------- */
+.back {
+  margin-bottom: 10px;
+}
+
+.back a {
+  color: #2563eb;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* -------- Comments -------- */
+.comment {
+  border: 1px solid #e5e7eb;
+  background: var(--bg-light);
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+/* -------- Loading Spinner -------- */
+.spinner {
+  text-align: center;
+  padding: 20px;
+  font-size: 16px;
+  color: var(--primary);
+  font-weight: 500;
+}
+
+/* -------- Error Message -------- */
+.error {
+  color: #b91c1c;
+  padding: 12px 0;
+  font-size: 15px;
+}
+
+/* -------- Links in details -------- */
+a {
+  cursor: pointer;
+}
